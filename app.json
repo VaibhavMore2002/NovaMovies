@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "MovieRecommendationApp",
-    "slug": "MovieRecommendationApp",
+    "name": "novamovies",
+    "slug": "novamovies",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
