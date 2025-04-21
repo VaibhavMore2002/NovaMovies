@@ -9,7 +9,7 @@ import MovieCard from "@/components/MovieCard";
 export default function Index() {
   const router = useRouter();
   const {data:movies,loading:moviesLoading,error:moviesError}=useFetch(()=>fetchMovies({
-    query:'iron man'
+    query:''
   }));
   return (
     <View className="flex-1 bg-primary"
