@@ -4,10 +4,16 @@ import { Link } from 'expo-router'
 
 const MovieCard = ({id,poster_path,title,vote_average,release_date}:Movie) => {
   return (
-    <View>
-      <Link href={`/movie/${id}`} asChild />
-    </View>
+      <Link href={`/movie/${id}`} asChild>
+        <TouchableOpacity className="w-[30%]">
+          <Image source={{url:poster_path?`https://image.tmdb.org/t/p/w500${poster_path}`:'https://placehold.co/600x400/1a1a1a/ffffff.png'}} 
+          className="w-full h-52 rounded-lg" resizeMode="cover">
+          </Image>
+          <Text className="text-sm font-bold text-white">{title}</Text>
+        </TouchableOpacity>
+      </Link>
+
   )
 }
 
-export default MovieCard;
+export default MovieCard;  
